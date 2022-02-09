@@ -28,7 +28,7 @@ The password they entered was the same, we used the same hashing algorithm to ha
 Even if somebody broke into our database and saw the hash, there's no way they'd be able to reverse it back into `mypassword` since it's a one-way system.
 
 <details>
-<summary><em>What if two users have the same password?</em></summary>
+<summary><strong><em>What if two users have the same password?</em></strong></summary>
 <br>
 If more than one user has the same password, we'll see the same hash in the database for both of them. This can be a security risk too! There's a solution to this: <em>salting</em>.
 <br><br>
