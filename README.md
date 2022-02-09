@@ -15,7 +15,7 @@ We hash them!
 Hashing is:
 
 - ***Deterministic***: The same input will *always* produce the same output.
-- ***One-way***: It's impossible to reverse a hash back to its original data form.
+- ***One-way***: It's practically impossible to reverse a hash back to its original data form.
 
 Since hashing is both deterministic and one-way, it's a great solution for storing passwords in a database. Even if somebody gains access to the data, they won't be able to un-hash the password to see what it was - but we can still verify a user has entered their password correctly because we can hash what they enter and compare the hash to the one stored in the database.
 
