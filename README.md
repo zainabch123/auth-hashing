@@ -40,3 +40,35 @@ If another user decides to use <code>mypassword</code>, they would be given a di
 <br><br>
 Two different users using the same password, but their hashes are completely different! You can save the salt in your database to use later when the user tries to log in, its purpose is only to ensure completely unique hashes.
 </details>
+
+## Setting up
+
+1. Fork this repository and clone the fork.
+2. Rename `.env.example` to `.env`
+3. Create a new database instance in ElephantSQL, then edit the `DATABASE_URL` variable in `.env`, swapping `YOUR_DATABASE_URL` for the URL of the database you just created. Leave `?schema=prisma` at the end.
+4. Edit the `SHADOW_DATABASE_URL` variable in `.env`, swapping `YOUR_SHADOW_DATABASE_URL` for the URL of the shadow database you created in the earlier exercises. Leave `?schema=shadow` at the end.
+5. Run `npm ci` to install dependencies.
+6. Run `npx prisma migrate reset` to execute the database migrations. Press `y` when it asks if you're sure.
+
+## Instructions
+
+In this exercise, you'll be using the `bcrypt` package to hash a user's password upon account registration and then compare it during login.
+
+You can choose to implement the full solution yourself or complete a partially built solution.
+
+<details>
+<summary><strong>I want to implement the solution by myself</strong></summary>
+<ul>
+<li>Checkout the <code>freedom</code> branch ( <code>git checkout freedom</code> )</li>
+<li>Run the app with <code>npm start</code>.</li>
+<li>Work through each file in the <code>requirements</code> directory in numerical order.</li>
+</ul>
+</details>
+<br>
+<details>
+<summary><strong>I want some scaffolding to help</strong></summary>
+<ul>
+<li>Run the app with <code>npm start</code>.</li>
+<li>Work through each file in the <code>requirements</code> directory in numerical order.</li>
+</ul>
+</details>
