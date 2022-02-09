@@ -52,7 +52,7 @@ Two different users using the same password, but their hashes are completely dif
 
 ## Instructions
 
-In this exercise, you'll be using the `bcrypt` package to hash a user's password upon account registration and then compare it during login.
+In this exercise, you'll be [using the bcrypt package](https://www.npmjs.com/package/bcrypt) to hash a user's password upon account registration and then compare it during login.
 
 You can choose to implement the full solution yourself or complete a partially built solution.
 
