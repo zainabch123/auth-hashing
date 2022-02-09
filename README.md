@@ -64,7 +64,7 @@ You can choose to implement the full solution yourself or complete a partially b
 <li>Work through each file in the <code>requirements</code> directory in numerical order.</li>
 </ul>
 </details>
-<br>
+
 <details>
 <summary><strong>I want some scaffolding to help</strong></summary>
 <ul>
