@@ -47,8 +47,9 @@ Two different users using the same password, but their hashes are completely dif
 2. Rename `.env.example` to `.env`
 3. Create a new database instance in ElephantSQL, then edit the `DATABASE_URL` variable in `.env`, swapping `YOUR_DATABASE_URL` for the URL of the database you just created. Leave `?schema=prisma` at the end.
 4. Edit the `SHADOW_DATABASE_URL` variable in `.env`, swapping `YOUR_SHADOW_DATABASE_URL` for the URL of the shadow database you created in the earlier exercises. Leave `?schema=shadow` at the end.
+5. Add your JWT secret string
 5. Run `npm ci` to install dependencies.
-6. Run `npx prisma migrate reset` to execute the database migrations. Press `y` when it asks if you're sure.
+6. Run `npx prisma migrate dev` to execute the database migrations. Or `npx prisma migrate reset` to reset database and run all migrations - press `y` when it asks if you're sure.
 
 ## Instructions
 
