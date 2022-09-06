@@ -1,6 +1,5 @@
 # User Registration
 
-1. Modify the `/register` controller function in `src/router.js` so the password is hashed before creating the user.
-2. Send back a "User created" message in the response.
+1. Implement the controller function in `src/routers/registrations.js` so the password is hashed before creating the user.
 
 https://github.com/kelektiv/node.bcrypt.js#with-promises
